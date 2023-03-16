@@ -53,4 +53,19 @@ Write a backend code to get an appointment with the healthcare experts
 ##### /register-doctor
 - Method: POST
 - {name,email,password,contact,specialization }
-
+#### /register-patient
+- Method: POST
+- {name,email,password,contact}
+#### /login-patient
+- Method: POST
+- {email,password}
+- The server will verify the email and password of the patient and a jwt token will be send to the client of that respective patient
+#### /login-doctor
+- Method: POST
+- {email,password}
+- The server will verify the email and password of the doctor and after verification a jwt token will be send to the client of that respective doctor.
+#### /filled-slots
+- Method: GET
+- Here we are fetching all the patients data of which they booked an appointment for a particular doctor. First we will verify the jwt token of the doctor and after that all the slots filled by the patients will be send to client.
+#### /book-slot
+- Method: POST
