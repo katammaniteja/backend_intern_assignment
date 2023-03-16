@@ -13,22 +13,22 @@ Write a backend code to get an appointment with the healthcare experts
 ### Schema
 #### Doctor
 {
-  name,
+  name, 
   email,
   password,
   specialization,
   contact,
   filled_slots:[
     {
-      date, // date at which the patient booked the slot
-      phone_number, // phone number of the patient
-      email, // email of the patient
-      name, // name of the patient
+      date,
+      phone_number,
+      email,
+      name,
     }
   ]
   tokens:[
     {
-      token, //jwt token of the doctor
+      token,
     }
   ]
 }
