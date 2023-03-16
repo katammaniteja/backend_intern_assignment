@@ -9,3 +9,29 @@ Write a backend code to get an appointment with the healthcare experts
 - The patient can book a session with doctor based on the specilization he wants. The backend will return the list of all doctors of that specialization of particular day the patient choosed.
 - Im assumed that per one day only one patient can book appointment for a particular Doctor. When the patient booked an appointemt the detials of the patient will be stored in database so that the doctor can call him and also the details of the doctor will be shared to patient.
 - In many ways we can implement. So based on the requirements the functionality may change. 
+
+### Schema
+#### Doctor
+{
+  name,
+  email,
+  password,
+  specialization,
+  contact,
+  filled_slots:[
+    {
+      date, // date at which the patient booked the slot
+      phone_number, // phone number of the patient
+      email, // email of the patient
+      name, // name of the patient
+    }
+  ]
+  tokens:[
+    {
+      token, //jwt token of the doctor
+    }
+  ]
+}
+
+### API End Points
+- 
