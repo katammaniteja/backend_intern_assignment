@@ -72,3 +72,7 @@ Write a backend code to get an appointment with the healthcare experts
 - **This is very challenging api"
 - {date,specialization}
 - Here we are giving option to the patient to book an appointment with the doctor. First we will verify the jwt token of the patient and date at which patient wants an appointment of doctor, specialization of the doctor. After that first we will get all the doctors of required specialization. Next we will find for each doctor whether on that he is avaiable or not. If he is available then simply we will book an appointment by stored the patient detials and we will send the doctor details to the patient. If no doctor is found then we will send the message to the client to choose another date.
+
+
+### Conclusion
+We can implement this section in different ways based on the requirements of the client. Thank you!!!
