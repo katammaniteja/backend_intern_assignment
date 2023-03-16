@@ -50,4 +50,7 @@ Write a backend code to get an appointment with the healthcare experts
 - Here we are just storing the details of the patient.
 
 ### API End Points
-- 
+##### /register-doctor
+- Method: POST
+- {name,email,password,contact,specialization }
+
